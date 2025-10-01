@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store</title>
+    <style>
+        /* CSS STYLES */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #ffe4e1;
+            color: #333;
+        }
+
+        header {
+            background-color: #111;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        .products, .sales, .benefits {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #e91e63;
+            margin-bottom: 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            transition: transform 0.2s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            border-radius: 4px;
+        }
+
+        .sales table {
+            width: 90%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        .sales th, .sales td {
+            border: 1px solid #ddd;
+            padding: 12px;
+        }
+
+        .sales th {
+            background-color: #f06292;
+            color: #fff;
+        }
+
+        .sales tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .benefits ul {
+            list-style: none;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0;
+            text-align: left;
+        }
+
+        .benefits li {
+            background: #fce4ec;
+            border-left: 5px solid #ec407a;
+            margin-bottom: 10px;
+            padding: 10px 15px;
+            border-radius: 4px;
+        }
+
+        footer {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Fashion Store</h1>
+        <p>Your Style, Our Passion</p>
+    </header>
+
+    <section class="products">
+        <h2>Explore Our Latest Collection</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <h3>Womens Dress</h3>
+                <p>Ksh 3,999</p>
+            </div>
+            <div class="product-card">
+                <h3>Stylish Jacket</h3>
+                <p>Ksh 5,999</p>
+            </div>
+            <div class="product-card">
+                <h3>Trending Sneakers</h3>
+                <p>Ksh 4,999</p>
+            </div>
+            <div class="product-card">
+                <h3>Leather Unisex Trouser</h3>
+                <p>Ksh 7,999</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="sales">
+        <h2>Upcoming Sale Offers</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Sale Event</th>
+                    <th>Date</th>
+                    <th>Discount</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>End Stock Sale</td>
+                    <td>Oct 10 - Oct 20</td>
+                    <td>Up to 50% off</td>
+                    <td>On all jackets and sneakers</td>
+                </tr>
+                <tr>
+                    <td>Diwali Fest</td>
+                    <td>Nov 1 - Nov 5</td>
+                    <td>Buy 1 Get 1 Free</td>
+                    <td>Applicable on select accessories</td>
+                </tr>
+                <tr>
+                    <td>Black Friday</td>
+                    <td>Nov 29</td>
+                    <td>Flat 60% off</td>
+                    <td>Across all categories</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="benefits">
+        <h2>Why Shop With Us?</h2>
+        <ul>
+            <li> Free shipping on orders above Ksh 1,999</li>
+            <li> Latest Fashion Trends updated everyday</li>
+            <li> Exclusive member discounts</li>
+            <li> 24/7 customer support</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Fashion Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
